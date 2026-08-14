@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SKINSMITH — Industry Intel Read (Q1 FY27)</title>
+<meta name="description" content="Men's premium skincare — market timing, trends, and risk flags. Skinsmith intel read from the RSM Beauty Industry Insights, Q1 FY27." />
+<meta name="theme-color" content="#12100e" />
+<meta property="og:title" content="SKINSMITH — Industry Intel Read" />
+<meta property="og:description" content="Men's premium skincare — market timing, trends & risk flags." />
+<meta property="og:type" content="article" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --paper:#f6f2ec; --paper-2:#fbf9f5; --ink:#201c18; --ink-soft:#4b433c;
+    --muted:#8a7f74; --line:#e5ddd2; --line-2:#d8cec1;
+    --ember:#cf5a1e; --ember-deep:#a8410f; --copper:#a9682f; --steel:#3a5670;
+    --card:#fffdfa;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    font-size:18px; line-height:1.72; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px}
+  a{color:var(--ember-deep)}
+
+  /* ---- MASTHEAD ---- */
+  .mast{background:linear-gradient(180deg,#14110e 0%,#1d1813 100%);color:#f4ede2;position:relative;overflow:hidden}
+  .mast::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;
+    background:linear-gradient(90deg,#7a2a10 0%,var(--ember) 40%,#ffab52 70%,#ffe0b0 100%)}
+  .mast::before{content:"";position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(80% 120% at 88% 8%, rgba(207,90,30,.22), rgba(207,90,30,0) 55%)}
+  .mast .wrap{position:relative;padding:56px 24px 46px}
+  .brand{font-family:"Space Mono",monospace;letter-spacing:.42em;text-transform:uppercase;
+    font-size:12px;color:#e0a06a;margin:0 0 22px}
+  .mast h1{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:clamp(30px,6vw,50px);
+    line-height:1.06;letter-spacing:-.01em;margin:0 0 14px}
+  .mast .sub{font-size:clamp(16px,2.6vw,19px);color:#c9bcab;max-width:52ch;margin:0}
+  .mast .src{font-family:"Space Mono",monospace;font-size:12px;line-height:1.7;color:#8f8375;
+    margin:26px 0 0;padding-top:18px;border-top:1px solid rgba(255,255,255,.1)}
+
+  /* ---- BODY SHELL ---- */
+  main{padding:8px 0 0}
+  .callout{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--ember);
+    border-radius:8px;padding:22px 26px;margin:38px 0}
+  .callout .tag{font-family:"Space Mono",monospace;letter-spacing:.22em;text-transform:uppercase;
+    font-size:11px;color:var(--ember-deep);display:block;margin-bottom:8px}
+  .callout p{margin:0;font-size:18px}
+  .callout.dark{background:#1d1813;border-color:#332a22;border-left-color:var(--ember);color:#f0e7da}
+  .callout.dark .tag{color:#e0a06a}
+
+  section{padding:14px 0}
+  .eyebrow{font-family:"Space Mono",monospace;letter-spacing:.24em;text-transform:uppercase;
+    font-size:11px;color:var(--copper);display:flex;align-items:center;gap:12px;margin:44px 0 6px}
+  .eyebrow .num{color:var(--ember);font-weight:700}
+  .eyebrow::after{content:"";flex:1;height:1px;background:var(--line-2)}
+  h2{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:clamp(23px,4vw,31px);
+    line-height:1.15;letter-spacing:-.01em;margin:2px 0 14px;color:var(--ink)}
+  h3{font-family:Inter,sans-serif;font-weight:600;font-size:15px;letter-spacing:.02em;
+    text-transform:uppercase;color:var(--ink-soft);margin:26px 0 8px}
+  p{margin:0 0 16px;color:var(--ink-soft)}
+  strong,b{color:var(--ink);font-weight:600}
+
+  /* report data list */
+  ul.data{list-style:none;padding:0;margin:0 0 8px}
+  ul.data li{position:relative;padding:6px 0 6px 26px;color:var(--ink-soft)}
+  ul.data li::before{content:"";position:absolute;left:2px;top:15px;width:8px;height:8px;
+    transform:rotate(45deg);background:linear-gradient(135deg,#ffab52,var(--ember))}
+
+  /* skinsmith interpretation block */
+  .read{background:linear-gradient(180deg,rgba(58,86,112,.06),rgba(58,86,112,.02));
+    border:1px solid #dfe3e8;border-left:4px solid var(--steel);border-radius:8px;
+    padding:16px 22px;margin:14px 0 8px}
+  .read .tag{font-family:"Space Mono",monospace;letter-spacing:.2em;text-transform:uppercase;
+    font-size:10.5px;color:var(--steel);display:block;margin-bottom:6px}
+  .read p{margin:0;color:var(--ink)}
+
+  /* numbered forge flags */
+  ol.flags{list-style:none;counter-reset:f;padding:0;margin:18px 0}
+  ol.flags li{counter-increment:f;position:relative;padding:16px 0 16px 52px;border-top:1px solid var(--line)}
+  ol.flags li:last-child{border-bottom:1px solid var(--line)}
+  ol.flags li::before{content:counter(f,decimal-leading-zero);position:absolute;left:0;top:15px;
+    font-family:"Space Mono",monospace;font-weight:700;font-size:13px;color:#fff;
+    background:linear-gradient(180deg,#ff8130,var(--ember));width:30px;height:30px;border-radius:6px;
+    display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px -4px rgba(207,90,30,.6)}
+  ol.flags li p{margin:0}
+  ol.flags li p + p{margin-top:6px}
+
+  .note{font-family:"Space Mono",monospace;font-size:12.5px;line-height:1.65;color:var(--muted);
+    background:var(--paper-2);border:1px dashed var(--line-2);border-radius:7px;padding:12px 16px;margin:6px 0 4px}
+
+  hr{border:none;border-top:1px solid var(--line);margin:40px 0}
+
+  footer{background:#14110e;color:#8f8375;margin-top:46px}
+  footer .wrap{padding:30px 24px 40px;text-align:center;font-family:"Space Mono",monospace;
+    font-size:12px;letter-spacing:.06em}
+  footer .fbrand{color:#e0a06a;letter-spacing:.3em;text-transform:uppercase;margin-bottom:8px}
+
+  @media (max-width:520px){ body{font-size:17px} .mast .wrap{padding:44px 22px 38px} }
+</style>
+</head>
+<body>
+
+<header class="mast"><div class="wrap">
+  <p class="brand">Skinsmith · Forged for Men</p>
+  <h1>Industry Intel Read</h1>
+  <p class="sub">Men's premium skincare — market timing, trends, and the risk flags that shape the launch.</p>
+  <p class="src">SOURCE — RSM Beauty Industry Insights, Q1 FY27 (data attributed by RSM to Bloomberg Intelligence, UBS, Wells Fargo, McKinsey). Skinsmith interpretation is labeled throughout. §4 regulatory specifics are general regulatory knowledge, not from the report — verify with an OTC/regulatory consultant.</p>
+</div></header>
+
+<main><div class="wrap">
+
+  <div class="callout dark">
+    <span class="tag">TL;DR</span>
+    <p>Market timing is genuinely good — <b>men's skincare is an explicitly-flagged growth pocket</b> inside the largest, most structural beauty category. The winning move isn't "premium price + aesthetic"; the data says consumers reward <b>proof + multi-benefit value</b>. So make <b>Blue Steel a proof-backed, one-step value hero</b> wrapped in the forge identity, launched DTC/TikTok. The real gating risk isn't demand — it's that <b>SPF products are FDA OTC drugs</b>; verify that path early, because it dictates your manufacturer, labeling, and claims.</p>
+  </div>
+
+  <section>
+    <div class="eyebrow"><span class="num">01</span> The Tailwind</div>
+    <h2>The market names your exact lane</h2>
+    <h3>Report data</h3>
+    <ul class="data">
+      <li>Global skincare <b>~$125B by 2027 (~6% CAGR)</b>; skincare is the <b>largest, most structural category</b> (~40% of L'Oréal sales), returning to steady growth.</li>
+      <li><b>Men's skincare = "an emerging pocket of growth"</b> — the report's own words. China men's skincare alone seen surpassing <b>RMB 20B by 2026</b>.</li>
+      <li>US beauty <b>~$120B, ~4% growth</b> in 2026; <b>35.2% of beauty sales</b> expected online.</li>
+    </ul>
+    <div class="read"><span class="tag">Skinsmith read</span>
+      <p>You're launching into a category analysts flag as structural, a sub-segment they flag as <i>emerging growth</i>, on a channel already worth a third of the market. The macro is a green light.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><span class="num">02</span> Positioning</div>
+    <h2>Value + <i>efficacy</i> beat price</h2>
+    <h3>Report data</h3>
+    <ul class="data">
+      <li><b>Only 14% of consumers</b> believe a higher price means better quality. "Masstige" (accessible premium) grew <b>+14%</b> and is the <i>most resilient tier</i>.</li>
+      <li>Premiumization now means <b>"scientific beauty"</b> — high-efficacy, science-backed formulations. <b>"Skincare growth hinges on proven efficacy."</b></li>
+      <li><b>e.l.f. (+24.6% YoY)</b> is the small-brand model: <b>hero product + community + proven efficacy + "value at an elevated experience."</b></li>
+    </ul>
+    <div class="read"><span class="tag">Skinsmith read</span>
+      <p>The forge/badass identity is strong <i>differentiation</i>, but a premium price with only an aesthetic story loses. <b>Blue Steel's real weapon is that it's a value play in disguise</b> — one step, cream + SPF, does the work of several products. Lead with efficacy, proof, and multi-benefit value; let the forge aesthetic be the wrapper. Nail ONE hero product first; don't dilute the line early.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow"><span class="num">03</span> Trends to Ride</div>
+    <h2>Where the demand is moving</h2>
+    <ul class="data">
+      <li><b>GLP-1 halo effect:</b> weight-loss drugs (GLP-1 scripts +38%/yr) are driving demand for <b>firming, barrier-repair, skin-elasticity, and body care</b> — a large, growing cohort of men with new skin concerns. A future Skinsmith claim lane.</li>
+      <li><b>DTC + TikTok Shop is the launchpad:</b> K-beauty hit <b>+37% US growth</b> using TikTok Shop + creator-led discovery. Waitlist → founding members → creator seeding is the proven path to trial.</li>
+      <li><b>"Clean" now means function + substantiated,</b> not slogans; naturally-derived at accessible prices is gaining. Copper Vault ("all-natural") fits the demand — <i>if the claims are backed</i>.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="eyebrow"><span class="num">04</span> Hard Flags</div>
+    <h2>The operational &amp; regulatory reality</h2>
+    <div class="note">The report flags ingredient safety / MoCRA / EPR generally. The specifics below are general regulatory knowledge, NOT from the report — treat as items to verify with an OTC/regulatory consultant before locking packaging or claims.</div>
+    <ol class="flags">
+      <li>
+        <p><b>SPF = an FDA OTC <i>drug</i>, not a cosmetic.</b> Both products make sun-protection claims, so they fall under the <b>OTC sunscreen monograph</b>: SPF testing, a "Drug Facts" panel, active-ingredient rules, and a contract manufacturer that is OTC-drug/sunscreen registered (not just a cosmetic filler). The FDA also restricts the word <b>"sunblock"</b> — compliant copy is "broad-spectrum SPF X." <i>(Current site copy uses "sunblock.")</i> <b>This is the single biggest flag.</b></p>
+      </li>
+      <li>
+        <p><b>MoCRA compliance</b> is table stakes: facility registration, product listing, safety substantiation, adverse-event reporting. The report cites benzene recalls (up to 15× the FDA limit) — safety scrutiny is high.</p>
+      </li>
+      <li>
+        <p><b>"All-natural sunblock" (Copper Vault) is the hardest claim in the lineup</b> — it stacks a "natural" claim (FTC Green Guides substantiation) on top of a mineral-SPF OTC drug. Achievable (zinc/titanium) but claims-heavy.</p>
+      </li>
+      <li>
+        <p><b>Packaging EPR:</b> the cement/heavy jar is on-brand but <b>packaging-intensive</b> → producer fees in CA/MD/OR/CO/MN/WA (via the Circular Action Alliance) as you scale, plus sustainability scrutiny. Worth a lighter/refill secondary-packaging plan before volume.</p>
+      </li>
+      <li>
+        <p><b>China-sourced jars = tariff exposure on COGS.</b> e.l.f. took a <b>$1 price increase</b> to offset China tariffs. Bake this into unit economics; consider dual-sourcing.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="eyebrow"><span class="num">05</span> The Long Game</div>
+    <h2>Hero brands are acquisition targets</h2>
+    <p>The report shows Beiersdorf (Nivea) actively hunting US skincare assets amid a broad M&amp;A wave. A focused, proven men's hero brand carries real exit optionality.</p>
+  </section>
+
+  <div class="callout">
+    <span class="tag">Bottom line</span>
+    <p>Market timing is good — men's skincare is a flagged growth pocket, and premiumization rewards proof. Win by making <b>Blue Steel a proof-backed, one-step value hero</b> wrapped in the forge identity, launched DTC/TikTok. The gating risk is the <b>SPF-as-OTC-drug regulatory path</b> — verify it early, because it shapes the manufacturer, labeling, and claims.</p>
+  </div>
+
+</div></main>
+
+<footer><div class="wrap">
+  <div class="fbrand">Skinsmith · Forged for Men</div>
+  <div>Industry Intel Read · Q1 FY27 · Prepared 2026-08-13</div>
+</div></footer>
+
+</body>
+</html>
